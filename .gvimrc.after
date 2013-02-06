@@ -10,3 +10,7 @@ set gcr=n:blinkon0
 " show the current matching pattern as you search (is),
 " highlight matches in a search (hls)
 set is hls
+
+" Powerline customization
+let g:Powerline_colorscheme = 'solarized'
+let g:Powerline_symbols = 'fancy'
