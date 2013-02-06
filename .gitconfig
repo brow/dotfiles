@@ -1,0 +1,10 @@
+[user]
+  email = tebrow@gmail.com
+  name = Tom Brow
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  sha = rev-parse --short HEAD

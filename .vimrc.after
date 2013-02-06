@@ -1,0 +1,33 @@
+" Hit esc to clear search highlighting
+nnoremap <esc> :noh<return><esc>
+
+" Use OS X clipboard
+set clipboard=unnamed
+
+" Use C-h and C-l to navigate tabs
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
+" For haskell-mode
+filetype plugin on
+au BufEnter *.hs compiler ghc
+let g:haddock_browser = "/usr/bin/google-chrome"
+let g:ghc = "/usr/bin/ghc"
+
+" Make "--" the default delimiter for Haskell commenting
+let g:NERDCustomDelimiters = {
+    \ 'haskell': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },
+    \ 'elm': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },
+\ }
+
+" Disable swap files
+set noswapfile
+
+" Disable code folding
+set nofoldenable
+
+" Override Markdown editing behavior
+au FileType markdown setlocal textwidth=0 spell
+
+" Don't prompt before reloading files changed outside vim
+set autoread
