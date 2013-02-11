@@ -31,3 +31,6 @@ au FileType markdown setlocal textwidth=0 spell
 
 " Don't prompt before reloading files changed outside vim
 set autoread
+
+" Delete trailing whitespace before saving
+autocmd BufWritePre * :%s/\s\+$//e
