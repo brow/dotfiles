@@ -14,3 +14,6 @@ set is hls
 " Powerline customization
 let g:Powerline_colorscheme = 'solarized'
 let g:Powerline_symbols = 'fancy'
+call Pl#Theme#RemoveSegment('scrollpercent')
+call Pl#Theme#RemoveSegment('fileformat')
+call Pl#Theme#RemoveSegment('fileencoding')
