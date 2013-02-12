@@ -23,6 +23,7 @@ let g:NERDCustomDelimiters = {
 
 " Ignore Haskell build files
 :set wildignore+=dist,*.hi
+let NERDTreeIgnore += ['^dist$']
 
 " Disable swap files
 set noswapfile
