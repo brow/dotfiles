@@ -21,6 +21,9 @@ let g:NERDCustomDelimiters = {
     \ 'elm': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },
 \ }
 
+" Ignore Haskell build files
+:set wildignore+=dist,*.hi
+
 " Disable swap files
 set noswapfile
 
