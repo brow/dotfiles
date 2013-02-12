@@ -11,6 +11,7 @@ nnoremap <C-l> :tabnext<CR>
 " For haskell-mode
 filetype plugin on
 au BufEnter *.hs compiler ghc
+au FileType haskell let b:ghc_staticoptions = "-Wall"
 let g:haddock_browser = "/usr/bin/google-chrome"
 let g:ghc = "/usr/bin/ghc"
 
