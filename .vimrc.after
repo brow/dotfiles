@@ -8,13 +8,6 @@ set clipboard=unnamed
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
-" For haskell-mode
-filetype plugin on
-au BufEnter *.hs compiler ghc
-au FileType haskell let b:ghc_staticoptions = "-Wall"
-let g:haddock_browser = "/usr/bin/google-chrome"
-let g:ghc = "/usr/bin/ghc"
-
 " Make "--" the default delimiter for Haskell commenting
 let g:NERDCustomDelimiters = {
     \ 'haskell': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },

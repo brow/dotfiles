@@ -1,6 +1,6 @@
 [submodule ".janus/vim-powerline"]
 	path = .janus/vim-powerline
 	url = git@github.com:Lokaltog/vim-powerline.git
-[submodule ".janus/haskellmode-vim"]
-	path = .janus/haskellmode-vim
-	url = git@github.com:lukerandall/haskellmode-vim.git
+[submodule ".janus/vim2hs"]
+	path = .janus/vim2hs
+	url = git@github.com:dag/vim2hs.git
