@@ -8,12 +8,6 @@ set clipboard=unnamed
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
-" Make "--" the default delimiter for Haskell commenting
-let g:NERDCustomDelimiters = {
-    \ 'haskell': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },
-    \ 'elm': { 'leftAlt': '{-','rightAlt': '-}', 'left': '-- ', 'right': '' },
-\ }
-
 " Ignore Haskell build files
 :set wildignore+=dist,*.hi
 let NERDTreeIgnore += ['^dist$']
