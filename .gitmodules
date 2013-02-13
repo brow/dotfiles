@@ -4,3 +4,6 @@
 [submodule ".janus/vim2hs"]
 	path = .janus/vim2hs
 	url = git@github.com:dag/vim2hs.git
+[submodule ".janus/neco-ghc"]
+	path = .janus/neco-ghc
+	url = git@github.com:ujihisa/neco-ghc.git

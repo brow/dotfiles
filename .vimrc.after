@@ -12,6 +12,9 @@ nnoremap <C-l> :tabnext<CR>
 :set wildignore+=dist,*.hi
 let NERDTreeIgnore += ['^dist$']
 
+" Use neco-ghc for Haskell completions
+au FileType haskell setlocal omnifunc=necoghc#omnifunc
+
 " Disable swap files
 set noswapfile
 
