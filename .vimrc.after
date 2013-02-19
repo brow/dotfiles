@@ -15,6 +15,9 @@ let NERDTreeIgnore += ['^dist$']
 " Use neco-ghc for Haskell completions
 au FileType haskell setlocal omnifunc=necoghc#omnifunc
 
+" Default to using cabal for building
+au FileType haskell compiler cabal
+
 " Disable swap files
 set noswapfile
 
