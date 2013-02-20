@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/$HOME/Library/Haskell/bin:$PATH
 
 export PS1="\W $ "
 export EDITOR='mvim -v'
