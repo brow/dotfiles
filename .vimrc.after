@@ -23,6 +23,7 @@ set noswapfile
 
 " Disable code folding
 set nofoldenable
+au BufEnter * set nofoldenable
 
 " Override Markdown editing behavior
 au FileType markdown setlocal textwidth=0 spell
