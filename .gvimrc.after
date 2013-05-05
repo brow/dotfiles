@@ -2,7 +2,8 @@
 set go-=T
 
 " default to Solarized color scheme
-:colorscheme solarized
+set background=light
+colorscheme solarized
 
 " turn off blinking cursor in normal mode
 set gcr=n:blinkon0
@@ -12,7 +13,7 @@ set gcr=n:blinkon0
 set is hls
 
 " Powerline customization
-let g:Powerline_colorscheme = 'solarized'
+let g:Powerline_colorscheme = 'solarized16_light'
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#RemoveSegment('scrollpercent')
 call Pl#Theme#RemoveSegment('fileformat')

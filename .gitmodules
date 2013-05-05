@@ -7,3 +7,6 @@
 [submodule ".janus/neco-ghc"]
 	path = .janus/neco-ghc
 	url = git@github.com:ujihisa/neco-ghc.git
+[submodule ".janus/vim-solarized-powerline"]
+	path = .janus/vim-solarized-powerline
+	url = git@github.com:stephenmckinney/vim-solarized-powerline.git
