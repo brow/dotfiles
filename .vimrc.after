@@ -9,8 +9,8 @@ nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
 " Ignore Haskell build files
-:set wildignore+=dist,*.hi
-let NERDTreeIgnore += ['^dist$','.hi$','.o$']
+:set wildignore+=dist,cabal-dev,*.hi
+let NERDTreeIgnore += ['^dist$','^cabal-dev$','.hi$','.o$']
 
 " Use neco-ghc for Haskell completions
 au FileType haskell setlocal omnifunc=necoghc#omnifunc
