@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/utilisnips"]
 	path = .vim/bundle/utilisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

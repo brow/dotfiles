@@ -4,6 +4,9 @@ filetype plugin indent on
 
 colorscheme solarized
 
+" Configuration for NERDTree
+let NERDTreeIgnore = []
+
 " Configuration for clang_complete
 let g:clang_snippets = 1
 let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
@@ -12,3 +15,6 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 " selected
 autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+" Mappings
+:map <leader>n :NERDTreeToggle<CR>
