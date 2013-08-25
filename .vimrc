@@ -16,5 +16,48 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 
+" Hit esc to clear search highlighting
+nnoremap <esc> :noh<return><esc>
+
+" Use OS X clipboard
+set clipboard=unnamed
+
+" Use C-h and C-l to navigate tabs
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
+" Ignore Haskell build files
+set wildignore+=dist,cabal-dev,*.hi
+let NERDTreeIgnore += ['^dist$','^cabal-dev$','.hi$','.o$']
+
+" Use neco-ghc for Haskell completions
+au FileType haskell setlocal omnifunc=necoghc#omnifunc
+
+" Automatically generate tags for projects with Cabalfile
+let g:haskell_autotags = 1
+let g:haskell_autotags_generator = 'hothasktags'
+
+" Default to using cabal for building
+au FileType haskell\|cabal compiler cabal
+
+" Disable swap files
+set noswapfile
+
+" Disable code folding
+set nofoldenable
+au BufEnter * set nofoldenable
+
+" Override Markdown editing behavior
+au FileType markdown setlocal textwidth=0 spell
+
+" Don't prompt before reloading files changed outside vim
+set autoread
+
+" Delete trailing whitespace before saving
+au BufWritePre * :%s/\s\+$//e
+
+" Save before make
+au QuickFixCmdPre make write
+
 " Mappings
 :map <leader>n :NERDTreeToggle<CR>
