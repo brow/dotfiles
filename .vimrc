@@ -1,8 +1,10 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
 colorscheme solarized
+
+" Highlight matches during and after entering a search
+set incsearch hlsearch
 
 " Configuration for NERDTree
 let NERDTreeShowHidden=1
