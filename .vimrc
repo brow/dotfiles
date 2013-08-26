@@ -5,6 +5,7 @@ filetype plugin indent on
 colorscheme solarized
 
 " Configuration for NERDTree
+let NERDTreeShowHidden=1
 let NERDTreeIgnore = []
 
 " Configuration for clang_complete
