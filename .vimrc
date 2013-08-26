@@ -3,7 +3,6 @@ syntax on
 filetype plugin indent on
 colorscheme solarized
 
-
 " Show line numbers
 set number
 
