@@ -4,7 +4,6 @@
 
 [alias]
   st = status
-  ci = commit
   br = branch
   co = checkout
   sha = rev-parse --short HEAD
