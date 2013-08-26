@@ -3,6 +3,13 @@ syntax on
 filetype plugin indent on
 colorscheme solarized
 
+
+" Show line numbers
+set number
+
+" Match sign column background to line number column background
+hi! link SignColumn LineNr
+
 " Highlight matches during and after entering a search
 set incsearch hlsearch
 
