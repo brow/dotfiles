@@ -14,7 +14,7 @@ set incsearch hlsearch
 
 " Configuration for NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = []
+let NERDTreeIgnore = ['^.DS_Store']
 
 " Configuration for clang_complete
 let g:clang_snippets = 1
