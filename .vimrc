@@ -23,6 +23,9 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^.DS_Store','build','.o$']
 
+" CtrlP
+let g:ctrlp_by_filename=1
+
 " Ignore Haskell build files
 set wildignore+=dist,cabal-dev,*.hi
 let NERDTreeIgnore+=['^dist$','^cabal-dev$','.hi$']
