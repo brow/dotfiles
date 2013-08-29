@@ -24,7 +24,7 @@
 	url = https://github.com/SirVer/ultisnips
 [submodule ".vim/bundle/vim-xctool"]
 	path = .vim/bundle/vim-xctool
-	url = https://github.com/brow/vim-xctool.git
+	url = git@github.com:brow/vim-xctool.git
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
