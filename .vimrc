@@ -22,11 +22,6 @@ let NERDTreeIgnore=['^.DS_Store','build','.o$']
 let g:clang_snippets = 1
 let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
 
-" When completion opens a preview buffer, close it after a completion is
-" selected
-autocmd CursorMovedI *  if pumvisible() == 0|silent! pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
-
 " Hit esc to clear search highlighting
 nnoremap <esc> :noh<return><esc>
 
