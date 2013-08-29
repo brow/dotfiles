@@ -41,15 +41,9 @@ nnoremap <C-l> :tabnext<CR>
 set wildignore+=dist,cabal-dev,*.hi
 let NERDTreeIgnore+=['^dist$','^cabal-dev$','.hi$']
 
-" Use neco-ghc for Haskell completions
-au FileType haskell setlocal omnifunc=necoghc#omnifunc
-
 " Automatically generate tags for projects with Cabalfile
 let g:haskell_autotags = 1
 let g:haskell_autotags_generator = 'hothasktags'
-
-" Default to using cabal for building
-au FileType haskell\|cabal compiler cabal
 
 " Disable swap files
 set noswapfile
@@ -57,9 +51,6 @@ set noswapfile
 " Disable code folding
 set nofoldenable
 au BufEnter * set nofoldenable
-
-" Override Markdown editing behavior
-au FileType markdown setlocal textwidth=0 spell
 
 " Don't prompt before reloading files changed outside vim
 set autoread
