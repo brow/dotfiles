@@ -2,7 +2,9 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-colorscheme solarized
+
+colorscheme slate
+set background=dark
 
 set number
 set incsearch hlsearch
@@ -12,9 +14,6 @@ set wildignore+=build
 
 " Use system clipboard
 set clipboard=unnamed
-
-" Match sign column background to line number column background
-hi! link SignColumn LineNr
 
 " clang_complete
 let g:clang_snippets = 1
