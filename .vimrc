@@ -12,9 +12,11 @@ hi! link SignColumn LineNr
 " Highlight matches during and after entering a search
 set incsearch hlsearch
 
+set wildignore+=build
+
 " Configuration for NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['^.DS_Store']
+let NERDTreeIgnore=['^.DS_Store','build','.o$']
 
 " Configuration for clang_complete
 let g:clang_snippets = 1
@@ -37,7 +39,7 @@ nnoremap <C-l> :tabnext<CR>
 
 " Ignore Haskell build files
 set wildignore+=dist,cabal-dev,*.hi
-let NERDTreeIgnore += ['^dist$','^cabal-dev$','.hi$','.o$']
+let NERDTreeIgnore+=['^dist$','^cabal-dev$','.hi$']
 
 " Use neco-ghc for Haskell completions
 au FileType haskell setlocal omnifunc=necoghc#omnifunc

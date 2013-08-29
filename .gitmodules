@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/vim-objc"]
 	path = .vim/bundle/vim-objc
 	url = https://github.com/b4winckler/vim-objc.git
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
