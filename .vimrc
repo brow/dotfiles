@@ -63,7 +63,7 @@ au FileType markdown setlocal textwidth=0 spell
 set autoread
 
 " Delete trailing whitespace before saving
-au BufWritePre * :%s/\s\+$//e
+" au BufWritePre * :%s/\s\+$//e
 
 " Save before make
 au QuickFixCmdPre make write
