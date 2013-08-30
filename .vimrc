@@ -41,7 +41,7 @@ let g:haskell_autotags_generator = 'hothasktags'
 au QuickFixCmdPre make wall
 
 " Mappings
-map <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 nnoremap <esc> :noh<return><esc>
