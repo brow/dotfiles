@@ -10,7 +10,6 @@ set number
 set incsearch hlsearch
 set noswapfile
 set autoread
-set wildignore+=build
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -27,6 +26,8 @@ set foldmethod=indent
 set foldlevelstart=99
 set autochdir
 
+set wildignore+=build,.DS_Store,.git
+
 " Use system clipboard
 set clipboard=unnamed
 
@@ -36,7 +37,7 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 
 " NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['^.DS_Store$','^build$','.o$','.netrwhist$']
+let NERDTreeIgnore=['^.DS_Store$','^build$','.o$','^.netrwhist$','^.git$']
 
 " CtrlP
 let g:ctrlp_by_filename=1
