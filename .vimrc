@@ -11,6 +11,13 @@ set incsearch hlsearch
 set noswapfile
 set autoread
 set wildignore+=build
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set nocindent
+set nosmartindent
+set autoindent
 
 " Use system clipboard
 set clipboard=unnamed
