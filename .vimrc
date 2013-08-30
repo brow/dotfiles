@@ -18,6 +18,7 @@ set expandtab
 set nocindent
 set nosmartindent
 set autoindent
+set ignorecase smartcase
 
 " Use system clipboard
 set clipboard=unnamed
