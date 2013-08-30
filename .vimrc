@@ -19,6 +19,13 @@ set nocindent
 set nosmartindent
 set autoindent
 set ignorecase smartcase
+set gdefault
+set ruler
+set textwidth=80
+set equalalways
+set foldmethod=indent
+set foldlevelstart=99
+set autochdir
 
 " Use system clipboard
 set clipboard=unnamed
