@@ -37,7 +37,7 @@ let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchain
 
 " NERDTree
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['^.DS_Store$','^build$','.o$','^.netrwhist$','^.git$']
+let NERDTreeIgnore=['^\.DS_Store$','^build$','\.o$','^\.netrwhist$','^\.git$']
 
 " CtrlP
 let g:ctrlp_by_filename=1
