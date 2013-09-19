@@ -34,6 +34,7 @@ set clipboard=unnamed
 " clang_complete
 let g:clang_snippets = 1
 let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+let g:clang_close_preview = 1
 
 " NERDTree
 let NERDTreeShowHidden=1
