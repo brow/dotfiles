@@ -25,6 +25,7 @@ set equalalways
 set foldmethod=indent
 set foldlevelstart=99
 set dictionary+=/usr/share/dict/words
+set backspace=2
 
 set wildignore+=build,.DS_Store,.git
 
