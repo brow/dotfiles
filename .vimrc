@@ -24,7 +24,6 @@ set textwidth=80
 set equalalways
 set foldmethod=indent
 set foldlevelstart=99
-set autochdir
 
 set wildignore+=build,.DS_Store,.git
 
