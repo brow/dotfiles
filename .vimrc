@@ -24,6 +24,7 @@ set textwidth=80
 set equalalways
 set foldmethod=indent
 set foldlevelstart=99
+set dictionary+=/usr/share/dict/words
 
 set wildignore+=build,.DS_Store,.git
 
