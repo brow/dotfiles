@@ -17,6 +17,7 @@ set expandtab
 set nocindent
 set nosmartindent
 set autoindent
+set linebreak
 set ignorecase smartcase
 set gdefault
 set ruler
