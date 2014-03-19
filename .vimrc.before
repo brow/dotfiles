@@ -1,2 +1,0 @@
-" vimwiki conflicts with markdown for the .md extension
-call janus#disable_plugin('vimwiki')

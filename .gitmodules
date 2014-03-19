@@ -1,15 +1,3 @@
-[submodule ".janus/vim-powerline"]
-	path = .janus/vim-powerline
-	url = git@github.com:Lokaltog/vim-powerline.git
-[submodule ".janus/vim2hs"]
-	path = .janus/vim2hs
-	url = git@github.com:dag/vim2hs.git
-[submodule ".janus/neco-ghc"]
-	path = .janus/neco-ghc
-	url = git@github.com:ujihisa/neco-ghc.git
-[submodule ".janus/vim-solarized-powerline"]
-	path = .janus/vim-solarized-powerline
-	url = git@github.com:stephenmckinney/vim-solarized-powerline.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
