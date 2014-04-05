@@ -1,3 +1,3 @@
-set spell
+set spell spellcapcheck=""
 
 startinsert
