@@ -63,7 +63,6 @@ au QuickFixCmdPre make wall
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
-nnoremap <silent> <esc> :noh<CR><esc>
 vnoremap <tab> %
 vnoremap < <gv
 vnoremap > >gv
