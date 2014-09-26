@@ -10,3 +10,5 @@
 
 [push]
   default = simple
+[core]
+	excludesfile = /Users/asana/.gitignore_global
