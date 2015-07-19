@@ -11,4 +11,8 @@
 [push]
   default = simple
 [core]
-	excludesfile = /Users/asana/.gitignore_global
+	excludesfile = /Users/tombrow/.gitignore_global
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
