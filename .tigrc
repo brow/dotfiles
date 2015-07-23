@@ -1,2 +1,12 @@
 bind generic ; prompt
+bind generic B !git checkout -b %(prompt) %(commit)
+bind generic u ?git pull
 
+bind main    C ?git checkout %(commit)
+
+bind refs    ! ?git branch -d %(branch)
+bind refs    p !git push %(branch)
+bind refs    P ?git push -u %(remote) %(branch)
+bind refs    M ?git merge --no-ff %(branch)
+
+bind status  A ?git add --all
