@@ -1,2 +1,10 @@
 bind generic ; prompt
 
+bind refs ! !git branch -d %(branch)
+bind refs D ?git branch -D %(branch)
+bind refs M ?git merge --no-ff %(branch)
+
+bind main C ?git checkout %(commit)
+bind main P ?git cherry-pick $(commit)
+
+bind generic B !git co -b %(prompt)
