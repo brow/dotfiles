@@ -1,10 +1,18 @@
 bind generic ; prompt
+bind generic B !git checkout -b %(prompt)
+bind generic u ?git pull
 
-bind refs ! !git branch -d %(branch)
-bind refs D ?git branch -D %(branch)
-bind refs M ?git merge --no-ff %(branch)
+bind main    C ?git checkout %(commit)
+bind main    P ?git cherry-pick %(commit)
 
-bind main C ?git checkout %(commit)
-bind main P ?git cherry-pick $(commit)
+bind refs    ! !git branch -d %(branch)
+bind refs    D ?git branch -D %(branch)
+bind refs    p !git push %(branch)
+bind refs    P ?git push -u %(remote) %(branch)
+bind refs    M ?git merge --no-ff %(branch)
+bind refs    L ?arc land %(branch)
 
-bind generic B !git co -b %(prompt)
+bind status  A ?git add --all
+bind status  T ?git checkout --theirs %(file)
+bind status  O ?git checkout --ours %(file)
+bind status  M ?git commit --amend
