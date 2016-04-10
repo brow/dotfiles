@@ -33,11 +33,6 @@ set wildignore+=build,.DS_Store,.git
 " Use system clipboard
 set clipboard=unnamed
 
-" clang_complete
-let g:clang_snippets = 1
-let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-let g:clang_close_preview = 1
-
 " NERDTree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^\.DS_Store$','^build$','\.o$','^\.netrwhist$','^\.git$']
@@ -68,3 +63,4 @@ vnoremap < <gv
 vnoremap > >gv
 noremap ; :
 map : <Nop>
+map q <Nop>
