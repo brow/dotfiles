@@ -45,6 +45,10 @@ let g:ctrlp_show_hidden = 1
 set wildignore+=dist,cabal-dev,*.hi
 let NERDTreeIgnore+=['^dist$','^cabal-dev$','.hi$']
 
+" Ignore Python build files
+set wildignore+=*.pyc
+let NERDTreeIgnore+=['.pyc$']
+
 " Automatically generate tags for projects with Cabalfile
 let g:haskell_autotags = 1
 let g:haskell_autotags_generator = 'hothasktags'
