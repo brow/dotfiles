@@ -4,6 +4,7 @@ bind generic u ?git pull
 
 bind main    C ?git checkout %(commit)
 bind main    P ?git cherry-pick %(commit)
+bind main    V ?git revert %(commit)
 
 bind refs    ! !git branch -d %(branch)
 bind refs    D ?git branch -D %(branch)

@@ -17,3 +17,10 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
+[diff]
+    tool = mvimdiff
+[difftool "mvimdiff"]
+    cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false

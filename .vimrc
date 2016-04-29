@@ -3,8 +3,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme slate
-set background=dark
+colorscheme solarized
+set background=light
 
 set number
 set incsearch hlsearch
