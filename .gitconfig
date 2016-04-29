@@ -13,10 +13,3 @@
   default = simple
 [core]
 	excludesfile = /Users/asana/.gitignore_global
-
-[diff]
-    tool = mvimdiff
-[difftool "mvimdiff"]
-    cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
