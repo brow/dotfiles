@@ -22,6 +22,9 @@ $cli set private.pc_application_to_controlLock 1
 /bin/echo -n .
 $cli set private.pc_application_to_control 1
 
+# AEII doesn't have a Fn key, so map Control_L to Fn.
+$cli set remap.controlL2fn 1
+
 # Remap fkeys to media keys, brightness, etc.
 /bin/echo -n .
 $cli set remap.fkeys_to_consumer_f1 1
