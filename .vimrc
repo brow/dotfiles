@@ -40,6 +40,7 @@ let NERDTreeIgnore=['^\.DS_Store$','^build$','\.o$','^\.netrwhist$','^\.git$']
 " CtrlP
 let g:ctrlp_by_filename=1
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_clear_cache_on_exit = 0
 
 " Ignore Haskell build files
 set wildignore+=dist,cabal-dev,*.hi
