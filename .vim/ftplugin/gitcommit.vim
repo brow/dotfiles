@@ -1,3 +1,1 @@
 set spell spellcapcheck=""
-
-startinsert
