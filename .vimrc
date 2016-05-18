@@ -37,6 +37,9 @@ set clipboard=unnamed
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^\.DS_Store$','^build$','\.o$','^\.netrwhist$','^\.git$']
 
+" NERDCommenter
+let NERDSpaceDelims=1
+
 " CtrlP
 let g:ctrlp_by_filename=1
 let g:ctrlp_show_hidden = 1
