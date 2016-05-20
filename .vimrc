@@ -63,8 +63,8 @@ let g:haskell_autotags_generator = 'hothasktags'
 " Write all buffers before building
 au QuickFixCmdPre make wall
 
-" python-mode
-let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+" Syntastic
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-h> :tabprevious<CR>
