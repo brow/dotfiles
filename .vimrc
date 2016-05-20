@@ -21,7 +21,8 @@ set linebreak
 set ignorecase smartcase
 set gdefault
 set ruler
-set textwidth=80
+set textwidth=79
+set colorcolumn=80
 set equalalways
 set foldmethod=indent
 set foldlevelstart=99
