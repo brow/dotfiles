@@ -29,6 +29,11 @@ set foldlevelstart=99
 set dictionary+=/usr/share/dict/words
 set backspace=2
 
+" Allow project-local .vimrc
+" https://andrew.stwrt.ca/posts/project-specific-vimrc/
+set exrc
+set secure
+
 set wildignore+=build,.DS_Store,.git
 
 " Use system clipboard
@@ -66,6 +71,10 @@ au QuickFixCmdPre make wall
 
 " Syntastic
 let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+
+" jedi-vim
+" Avoid conflict with <leader>n to open NERDTree
+let g:jedi#usages_command = "<leader>u"
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-h> :tabprevious<CR>
