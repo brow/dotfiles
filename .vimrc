@@ -66,9 +66,6 @@ let g:haskell_autotags_generator = 'hothasktags'
 " Write all buffers before building
 au QuickFixCmdPre make wall
 
-" Syntastic
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
-
 " jedi-vim
 " Avoid conflict with <leader>n to open NERDTree
 let g:jedi#usages_command = "<leader>u"
