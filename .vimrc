@@ -63,9 +63,6 @@ let NERDTreeIgnore+=['.pyc$']
 let g:haskell_autotags = 1
 let g:haskell_autotags_generator = 'hothasktags'
 
-" Delete trailing whitespace before saving
-" au BufWritePre * :%s/\s\+$//e
-
 " Write all buffers before building
 au QuickFixCmdPre make wall
 
