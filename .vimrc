@@ -39,12 +39,18 @@ set wildignore+=build,.DS_Store,.git
 " Use system clipboard
 set clipboard=unnamed
 
+" Recommended by https://github.com/airblade/vim-gitgutter#getting-started
+set updatetime=250
+
 " NERDTree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^\.DS_Store$','^build$','\.o$','^\.netrwhist$','^\.git$']
 
 " NERDCommenter
 let NERDSpaceDelims=1
+
+" gitgutter
+let g:gitgutter_highlight_lines = 1
 
 " CtrlP
 let g:ctrlp_by_filename=1
