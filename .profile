@@ -11,3 +11,6 @@ alias mocha-watch='nodemon --quiet --watch lib --watch test $NODE_PATH/mocha/bin
 
 # Make ack respect per-directory config files
 export ACKRC=".ackrc"
+
+# Google App Engine
+# export GAE_SDK_PATH=$HOME/google-cloud-sdk/platform/google_appengine
