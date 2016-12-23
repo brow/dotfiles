@@ -17,3 +17,7 @@ bind status  A ?git add --all
 bind status  T ?git checkout --theirs %(file)
 bind status  O ?git checkout --ours %(file)
 bind status  M ?git commit --amend
+
+set main-view = line-number:no id:no date:no author:no commit-title:yes,graph,refs,overflow=no
+set refs-view = line-number:no id:no date:no author:no ref commit-title
+set stash-view	= line-number:no id date:no author:no commit-title
