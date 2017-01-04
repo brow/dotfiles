@@ -14,3 +14,6 @@ export ACKRC=".ackrc"
 
 # Google App Engine
 # export GAE_SDK_PATH=$HOME/google-cloud-sdk/platform/google_appengine
+
+# http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
+export PYTHONDONTWRITEBYTECODE=1
