@@ -1,9 +1,7 @@
 PATH=/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
 
 export PS1="\W $ "
-export EDITOR='mvim -v'
-
-alias vim='mvim -v'
+export EDITOR='vim' 
 
 # node.js
 export NODE_PATH='/usr/local/lib/node_modules'
