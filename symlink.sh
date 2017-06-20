@@ -6,4 +6,6 @@ do
     ln -s "$PWD/$f" "$HOME/$f"
 done
 
-ln -s "$PWD/private.xml" "$HOME/Library/Application Support/Karabiner/private.xml"
+echo "Linking karabiner.json"
+mkdir -p "$HOME/.config/karabiner"
+ln -s "$PWD/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
