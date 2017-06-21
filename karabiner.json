@@ -133,6 +133,23 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "description": "Left Control to Fn",
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
