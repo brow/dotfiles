@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ejectKeywordEnabled</key>
+	<true/>
 	<key>ejectallKeywordEnabled</key>
 	<true/>
 	<key>emptytrashKeywordEnabled</key>
@@ -9,6 +11,8 @@
 	<key>forcequitKeywordEnabled</key>
 	<false/>
 	<key>hideKeywordEnabled</key>
+	<false/>
+	<key>lockKeywordEnabled</key>
 	<false/>
 	<key>logoutKeywordEnabled</key>
 	<false/>
@@ -23,8 +27,6 @@
 	<key>showtrashKeywordEnabled</key>
 	<false/>
 	<key>shutdownKeywordEnabled</key>
-	<false/>
-	<key>sleepKeywordEnabled</key>
 	<false/>
 </dict>
 </plist>
