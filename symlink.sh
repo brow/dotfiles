@@ -5,7 +5,3 @@ do
     echo "Linking $f"
     ln -s "$PWD/$f" "$HOME/$f"
 done
-
-echo "Linking karabiner.json"
-mkdir -p "$HOME/.config/karabiner"
-ln -s "$PWD/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
