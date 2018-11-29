@@ -1,5 +1,5 @@
-# Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+# Don't show desktop icons
+defaults write com.apple.finder CreateDesktop false
 
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
@@ -10,5 +10,10 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Disable press-and-hold for keys in favor of key repeat.
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
+# https://github.com/mathiasbynens/dotfiles/issues/687
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10

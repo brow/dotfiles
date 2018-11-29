@@ -5,5 +5,3 @@ do
     echo "Linking $f"
     ln -s "$PWD/$f" "$HOME/$f"
 done
-
-ln -s "$PWD/private.xml" "$HOME/Library/Application Support/Karabiner/private.xml"
