@@ -1,6 +1,6 @@
 [user]
-  email = tom@tombrow.com
-  name = Tom Brow
+	email = tom@tombrow.com
+	name = Tom Brow
 
 [alias]
   st = status
@@ -18,9 +18,12 @@
 	smudge = git lfs smudge %f
 	required = true
 
+[merge]
+    tool = vimdiff
+[mergetool]
+    prompt = false
+
 [diff]
-    tool = mvimdiff
-[difftool "mvimdiff"]
-    cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
+    tool = vimdiff
 [difftool]
 	prompt = false

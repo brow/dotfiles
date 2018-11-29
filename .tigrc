@@ -20,6 +20,7 @@ bind status  M ?git commit --amend
 bind status  S ?git stash
 bind status  K ?git stash -k
 bind status  P ?git stash pop
+bind status  U ?git reset %(file)
 
 set main-view = line-number:no id:no date:no author:no commit-title:yes,graph,refs,overflow=no
 set refs-view = line-number:no id:no date:no author:no ref commit-title
