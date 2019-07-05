@@ -38,3 +38,7 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 
     sith
 fi
+
+# Suppress Fastlane update prompts
+# https://github.com/fastlane/fastlane/issues/7746
+export FASTLANE_SKIP_UPDATE_CHECK=1
