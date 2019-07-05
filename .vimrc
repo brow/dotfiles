@@ -4,7 +4,6 @@ syntax on
 filetype plugin indent on
 
 colorscheme solarized
-set background=light
 
 set number
 set incsearch hlsearch
@@ -75,6 +74,15 @@ au QuickFixCmdPre make wall
 " jedi-vim
 " Avoid conflict with <leader>n to open NERDTree
 let g:jedi#usages_command = "<leader>u"
+
+" Match background to iTerm profile (light vs. dark)
+" http://apas.gr/2018/11/dark-mode-macos-safari-iterm-vim/
+let iterm_profile = $ITERM_PROFILE
+if iterm_profile == "Dark"
+    set background=dark
+else
+    set background=light
+endif
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-h> :tabprevious<CR>

@@ -15,3 +15,26 @@ export ACKRC=".ackrc"
 
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 export PYTHONDONTWRITEBYTECODE=1
+
+# Automatically change profile to match macOS appearance (dark vs. light)
+# http://apas.gr/2018/11/dark-mode-macos-safari-iterm-vim/
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    sith() {
+        val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+        if [[ $val == "Dark" ]]; then
+            i
+        fi
+    }
+
+    i() {
+        if [[ $ITERM_PROFILE == "Light" ]]; then
+            echo -ne "\033]50;SetProfile=Dark\a"
+            export ITERM_PROFILE="Dark"
+        else
+            echo -ne "\033]50;SetProfile=Light\a"
+            export ITERM_PROFILE="Light"
+        fi
+    }
+
+    sith
+fi
