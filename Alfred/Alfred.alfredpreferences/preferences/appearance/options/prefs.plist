@@ -11,7 +11,7 @@
 	<key>hideshortcuts</key>
 	<true/>
 	<key>hidesubtext</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>showOnScreen</key>
 	<integer>2</integer>
 </dict>
