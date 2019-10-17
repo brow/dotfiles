@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
 
 export PS1="\W $ "
 export EDITOR='vim' 
