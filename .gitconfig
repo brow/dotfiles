@@ -25,5 +25,6 @@
 
 [diff]
     tool = vimdiff
+	ignoreSubmodules = dirty
 [difftool]
 	prompt = false
