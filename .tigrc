@@ -1,17 +1,19 @@
 bind generic ; prompt
 bind generic B !git checkout -b %(prompt)
-bind generic u ?git pull
 
 bind main    C ?git checkout %(commit)
 bind main    P ?git cherry-pick %(commit)
 bind main    V ?git revert %(commit)
+bind main    v ?git revert --no-commit %(commit)
 
 bind refs    ! !git branch -d %(branch)
 bind refs    D ?git branch -D %(branch)
 bind refs    p !git push %(remote) %(branch)
 bind refs    P ?git push -u %(remote) %(branch)
+bind refs    F ?git push --set-upstream %(remote) %(branch) --force
 bind refs    M ?git merge --no-ff %(branch)
-bind refs    L ?arc land %(branch)
+bind refs    u !git pull --ff-only %(remote) %(branch)
+bind refs    G !open "https://github.com/chalkinc/chalk-ios/compare/%(branch)?expand=1"
 
 bind status  A ?git add --all
 bind status  T ?git checkout --theirs %(file)
