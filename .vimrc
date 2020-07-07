@@ -76,9 +76,7 @@ au QuickFixCmdPre make wall
 let g:jedi#usages_command = "<leader>u"
 
 " Match background to iTerm profile (light vs. dark)
-" http://apas.gr/2018/11/dark-mode-macos-safari-iterm-vim/
-let iterm_profile = $ITERM_PROFILE
-if iterm_profile == "Dark"
+if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark
 else
     set background=light
