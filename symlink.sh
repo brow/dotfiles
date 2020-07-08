@@ -5,7 +5,7 @@ do
     src="$PWD/$f"
     dst="$HOME/$f"
     if [ -f "$dst" ] || [ -d "$dst" ]; then
-        echo "Skipping $dst"
+        echo "Skipping $f"
     else
         echo "ln -s $src $dst"
         ln -s "$src" "$dst"
