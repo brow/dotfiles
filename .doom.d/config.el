@@ -38,6 +38,16 @@
 ;; Less delay before which-key buffer appears
 (setq which-key-idle-delay 0.3)
 
+;; Don't prompt for confirmation when I try to quit (unless unsaved buffers)
+(setq confirm-kill-emacs nil)
+
+(defun brow-toggle-theme ()
+  "Switch between light and dark theme."
+  (interactive)
+  (let ((light-theme 'doom-solarized-light)
+        (dark-theme 'doom-one))
+    (load-theme (if (eq doom-theme light-theme) dark-theme light-theme))))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
