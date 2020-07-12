@@ -48,6 +48,9 @@
         (dark-theme 'doom-one))
     (load-theme (if (eq doom-theme light-theme) dark-theme light-theme))))
 
+(map! :leader
+      (:prefix "h" "T" 'brow-toggle-theme))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
