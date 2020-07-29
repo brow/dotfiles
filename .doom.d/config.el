@@ -31,6 +31,11 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+(after! org-roam
+  (setq org-roam-directory "~/org/"
+        org-roam-completion-system 'ivy
+        org-roam-buffer-width 0.2))
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
