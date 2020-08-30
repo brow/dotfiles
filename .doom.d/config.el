@@ -46,6 +46,9 @@
 ;; Don't prompt for confirmation when I try to quit (unless unsaved buffers)
 (setq confirm-kill-emacs nil)
 
+;; http://pragmaticemacs.com/emacs/automatically-revert-buffers/
+(global-auto-revert-mode 1)
+
 (defun brow-toggle-theme ()
   "Switch between light and dark theme."
   (interactive)
