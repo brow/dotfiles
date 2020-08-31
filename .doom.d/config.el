@@ -60,6 +60,21 @@
 (map! :leader
       (:prefix "h" "T" 'brow-toggle-theme))
 
+;; Adapted from John Kitchin's `formatted-copy`
+;; http://kitchingroup.cheme.cmu.edu/blog/2016/06/16/Copy-formatted-org-mode-text-from-Emacs-to-other-applications/
+(defun brow-org-copy-as-rich-text ()
+  "Copy org content as to clipboard as RTF."
+  (interactive)
+  (save-window-excursion
+    (let* ((buf (org-export-to-buffer 'html "*Temp buffer for brow-org-copy-as-rich-text*" nil nil t t))
+           (html (with-current-buffer buf (buffer-string))))
+      (with-current-buffer buf
+        (shell-command-on-region
+         (point-min)
+         (point-max)
+         "textutil -stdin -format html -convert rtf -stdout | pbcopy"))
+      (kill-buffer buf))))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
