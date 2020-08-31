@@ -38,6 +38,7 @@
 
 ;; Automatically reload file when it changes on disk. Useful because I keep my
 ;; org files in a cloud-synced directory.
+;; http://pragmaticemacs.com/emacs/automatically-revert-buffers/
 (global-auto-revert-mode 1)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
