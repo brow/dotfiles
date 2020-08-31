@@ -36,6 +36,10 @@
         org-roam-completion-system 'ivy
         org-roam-buffer-width 0.2))
 
+;; Automatically reload file when it changes on disk. Useful because I keep my
+;; org files in a cloud-synced directory.
+(global-auto-revert-mode 1)
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
