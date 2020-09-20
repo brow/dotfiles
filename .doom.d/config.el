@@ -61,6 +61,10 @@
 (map! :leader
       (:prefix "h" "T" 'brow-toggle-theme))
 
+(map! :localleader
+      :map org-mode-map
+      "l f" 'org-mac-safari-insert-frontmost-url)
+
 ;; Adapted from John Kitchin's `formatted-copy`
 ;; http://kitchingroup.cheme.cmu.edu/blog/2016/06/16/Copy-formatted-org-mode-text-from-Emacs-to-other-applications/
 (defun brow-org-copy-as-rich-text ()
