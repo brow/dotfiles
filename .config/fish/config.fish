@@ -11,7 +11,7 @@ end
 
 set fish_cursor_insert line
 
-set EDITOR vim
+set EDITOR emacs
 
 # Disable greeting
 set fish_greeting
