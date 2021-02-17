@@ -51,7 +51,8 @@
   (interactive)
   (let ((light-theme 'doom-solarized-light)
         (dark-theme 'doom-one))
-    (load-theme (if (eq doom-theme light-theme) dark-theme light-theme))))
+    (load-theme (if (eq doom-theme light-theme) dark-theme light-theme)))
+  (redraw-display))
 
 (map! :leader
       (:prefix "h" "T" 'brow-toggle-theme))
