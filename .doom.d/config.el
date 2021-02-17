@@ -31,11 +31,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-(after! org-roam
-  (setq org-roam-directory "~/org/"
-        org-roam-completion-system 'ivy
-        org-roam-buffer-width 0.2))
-
 ;; Automatically reload file when it changes on disk. Useful because I keep my
 ;; org files in a cloud-synced directory.
 ;; http://pragmaticemacs.com/emacs/automatically-revert-buffers/
