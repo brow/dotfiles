@@ -42,18 +42,6 @@ toolbarspring {
  *  https://gist.github.com/BenoitAverty/af633ee20e27f48f9ba7178451432206
  */
 
-:root {
-    --hidetabs-tab-min-height: 200px;
-}
-
-:root[uidensity=compact] {
-    --hidetabs-tab-min-height: 200px;
-}
-
-:root[uidensity=touch] {
-    --hidetabs-tab-min-height: 200px;
-}
-
 /* Set --tab-min-height to 0px so tab bar can disappear */
 #tabbrowser-tabs {
     --tab-min-height: 0px;
@@ -61,7 +49,7 @@ toolbarspring {
 
 /* Restore minimum height when more than one tab */
 #tabbrowser-tabs tab {
-    min-height: var(--hidetabs-tab-min-height);
+    --tab-min-height: 30px;
 }
 
 /* Collapse tab bar when there is only one tab (tab is both first & last) */
