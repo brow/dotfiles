@@ -42,3 +42,7 @@ fi
 # Suppress Fastlane update prompts
 # https://github.com/fastlane/fastlane/issues/7746
 export FASTLANE_SKIP_UPDATE_CHECK=1
+
+# Added automatically by Nix install script
+# https://nixos.org/nix/install
+if [ -e /Users/tombrow/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/tombrow/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
