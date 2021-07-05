@@ -24,8 +24,23 @@
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;; `load-theme' function.
+(let ((dark-theme 'doom-tomorrow-night))
+  (load-theme dark-theme)
+  (defun brow-toggle-theme ()
+    "Switch between light and dark theme."
+    (interactive)
+    (let ((light-theme 'doom-solarized-light))
+      (load-theme (if (eq doom-theme light-theme) dark-theme light-theme)))
+    (redraw-display))
+  )
+;; Themes I like:
+;; 'doom-gruvbox
+;; 'doom-Iosvkem
+;; 'doom-molokai
+;; 'doom-monokai-spectrum
+;; 'doom-xcode
+;; 'doom-tomorrow-night
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -45,14 +60,6 @@
 
 ;; Don't prompt for confirmation when I try to quit (unless unsaved buffers)
 (setq confirm-kill-emacs nil)
-
-(defun brow-toggle-theme ()
-  "Switch between light and dark theme."
-  (interactive)
-  (let ((light-theme 'doom-solarized-light)
-        (dark-theme 'doom-one))
-    (load-theme (if (eq doom-theme light-theme) dark-theme light-theme)))
-  (redraw-display))
 
 (map! :leader
       (:prefix "h" "T" 'brow-toggle-theme))
