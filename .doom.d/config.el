@@ -30,17 +30,25 @@
   (defun brow-toggle-theme ()
     "Switch between light and dark theme."
     (interactive)
-    (let ((light-theme 'doom-solarized-light))
+    (let ((light-theme 'doom-one-light))
       (load-theme (if (eq doom-theme light-theme) dark-theme light-theme)))
     (redraw-display))
   )
-;; Themes I like:
-;; 'doom-gruvbox
-;; 'doom-Iosvkem
-;; 'doom-molokai
-;; 'doom-monokai-spectrum
-;; 'doom-xcode
-;; 'doom-tomorrow-night
+;; (
+;;  ;; Themes I like:
+;;  ;; Dark
+;;  'doom-gruvbox
+;;  'doom-Iosvkem
+;;  'doom-molokai
+;;  'doom-monokai-spectrum
+;;  'doom-xcode
+;;  'doom-tomorrow-night
+
+;;  ;; Light
+;;  'doom-flatwhite
+;;  'doom-tomorrow-day
+;;  'doom-one-light
+;; )
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
