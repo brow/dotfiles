@@ -26,7 +26,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function.
 (let ((dark-theme 'doom-tomorrow-night))
-  (load-theme dark-theme)
+  (load-theme dark-theme
+              t) ; Don't prompt user to confirm
   (defun brow-toggle-theme ()
     "Switch between light and dark theme."
     (interactive)
