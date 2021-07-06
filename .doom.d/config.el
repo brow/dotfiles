@@ -50,6 +50,11 @@
 ;;  'doom-one-light
 ;; )
 
+;; Override Doom's default of treating the right Option key as Option (i.e.,
+;; typing special characters) rather than Meta.
+;; https://github.com/hlissner/doom-emacs/issues/4178
+(setq ns-right-option-modifier 'meta)
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
