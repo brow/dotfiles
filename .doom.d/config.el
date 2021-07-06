@@ -55,6 +55,9 @@
 ;; https://github.com/hlissner/doom-emacs/issues/4178
 (setq ns-right-option-modifier 'meta)
 
+;; By default, doom-{increase,decrease}-font-size goes in steps of 2. Too fast.
+(setq doom-font-increment 1)
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
