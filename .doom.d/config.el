@@ -25,31 +25,44 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function.
-(let ((dark-theme 'doom-tomorrow-night))
-  (load-theme dark-theme
-              t) ; Don't prompt user to confirm
+;;   (add-hook
+;;    'ns-system-appearance-change-functions
+;;    (lambda (appearance) (
+;;       (pcase appearance
+;;         ('light (load-theme light-theme t)
+;;         ('dark (load-theme dark-theme t)))
+;;       )))))
+;;
+
+
+(let ((dark-theme 'doom-tomorrow-night)
+        ;; Also good:
+        ;; 'doom-gruvbox
+        ;; 'doom-Iosvkem
+        ;; 'doom-molokai
+        ;; 'doom-monokai-spectrum
+        ;; 'doom-xcode
+      (light-theme 'doom-one-light))
+        ;; Also good:
+        ;; 'doom-flatwhite
+        ;; 'doom-tomorrow-day
+
+  ;; Automatically load theme for system appearance
+  (add-hook 'ns-system-appearance-change-functions
+            (lambda (appearance)
+              "Load theme, taking current system APPEARANCE into consideration."
+              (mapc #'disable-theme custom-enabled-themes)
+              (pcase appearance
+                ('light (load-theme light-theme))
+                ('dark (load-theme dark-theme)))))
+
+  ;; Toggle manually
   (defun brow-toggle-theme ()
     "Switch between light and dark theme."
     (interactive)
     (let ((light-theme 'doom-one-light))
       (load-theme (if (eq doom-theme light-theme) dark-theme light-theme)))
-    (redraw-display))
-  )
-;; (
-;;  ;; Themes I like:
-;;  ;; Dark
-;;  'doom-gruvbox
-;;  'doom-Iosvkem
-;;  'doom-molokai
-;;  'doom-monokai-spectrum
-;;  'doom-xcode
-;;  'doom-tomorrow-night
-
-;;  ;; Light
-;;  'doom-flatwhite
-;;  'doom-tomorrow-day
-;;  'doom-one-light
-;; )
+    (redraw-display)))
 
 ;; Override Doom's default of treating the right Option key as Option (i.e.,
 ;; typing special characters) rather than Meta.
