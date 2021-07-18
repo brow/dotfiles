@@ -5,7 +5,7 @@
 .titlebar-buttonbox-container {
     display: none !important;
 }
-.titlebar-placeholder, #TabsToolbar .titlebar-spacer{ 
+.titlebar-placeholder, #TabsToolbar .titlebar-spacer {
     display: none;
 }
 #navigator-toolbox::after{
