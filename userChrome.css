@@ -18,7 +18,6 @@
 
 #main-window :-moz-any(
     #PanelUI-button,
-    #back-button,
     #forward-button,
     #stop-reload-button,
     #home-button,
