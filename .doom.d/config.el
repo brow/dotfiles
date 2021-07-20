@@ -9,6 +9,13 @@
 (setq user-full-name "Tom Brow"
       user-mail-address "tom@tombrow.com")
 
+;; GitHub access token for Magit/Forge/Ghub is stored in internet passwords
+;; https://github.com/magit/ghub/issues/101#issue-518154838
+;;
+;; Ghub docs recommend making auth-sources more specific than the default:
+;; https://magit.vc/manual/ghub.html#Storing-a-Token
+(setq auth-sources '(macos-keychain-internet))
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;

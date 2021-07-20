@@ -28,3 +28,5 @@
 	ignoreSubmodules = dirty
 [difftool]
 	prompt = false
+[github]
+	user = brow
