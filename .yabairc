@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+#
+# Config for yabai
+# https://github.com/koekeishiya/yabai
 
 yabai -m config layout bsp
 
