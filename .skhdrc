@@ -1,0 +1,2 @@
+cmd + ctrl - j : yabai -m window --focus recent
+cmd + ctrl - k : yabai -m window --toggle float
