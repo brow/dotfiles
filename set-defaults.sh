@@ -17,3 +17,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # https://github.com/mathiasbynens/dotfiles/issues/687
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Cmd-ctrl drag anywhere in a window to move it
+defaults write -g NSWindowShouldDragOnGesture -bool true
