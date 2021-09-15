@@ -9,6 +9,10 @@ yabai -m config layout bsp
 # autoraise (window gets raised as if it was clicked on).
 yabai -m config focus_follows_mouse          autoraise
 
+# The mouse_modifier can be held to temporarily suspend focus_follows_mouse.
+# https://github.com/koekeishiya/yabai/issues/62
+yabai -m config mouse_modifier               alt
+
 # When yabai focuses another window, the mouse cursor gets moved to the center
 # of the focused window.
 yabai -m config mouse_follows_focus          on
