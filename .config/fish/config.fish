@@ -17,4 +17,4 @@ set EDITOR emacs
 set fish_greeting
 
 # Suggested by homebrew
-set PATH /usr/local/opt/ruby/bin /usr/local/sbin /usr/local/bin $PATH
+set PATH /usr/local/opt/ruby/bin /usr/local/sbin /usr/local/bin /opt/homebrew/bin $PATH
