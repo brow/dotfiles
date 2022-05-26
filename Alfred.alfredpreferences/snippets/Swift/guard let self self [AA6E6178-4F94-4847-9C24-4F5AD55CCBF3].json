@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "guard let self = self else { return }",
-    "uid" : "AA6E6178-4F94-4847-9C24-4F5AD55CCBF3",
-    "name" : "guard let self = self",
-    "keyword" : ""
-  }
-}
