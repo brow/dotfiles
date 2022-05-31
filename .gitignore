@@ -1,0 +1,16 @@
+# Block defaults
+*.iml
+*.swp
+*.swo
+.bundle
+.DS_Store
+.idea
+.rbx
+node_modules
+/tags
+
+# File that tells specifcially ripgrep what (not) to ignore, overriding .gitignore
+# https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#automatic-filtering
+#
+# I use this to _not_ ignore the Pods dir when grepping ios-register.
+.rgignore
