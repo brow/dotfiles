@@ -1,9 +1,11 @@
 # Focus
 cmd + ctrl - down :    yabai -m window --focus recent
 cmd + ctrl - left :    yabai -m window --focus prev || \
-                       yabai -m window --focus last
+                       yabai -m display --focus next
+                       # yabai -m window --focus last
 cmd + ctrl - right :   yabai -m window --focus next || \
-                       yabai -m window --focus first
+                       yabai -m display --focus prev
+                       # yabai -m window --focus first
 
 # Swap
 ctrl + alt + shift - j :    yabai -m window --swap recent
