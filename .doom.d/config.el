@@ -16,6 +16,16 @@
 ;; https://magit.vc/manual/ghub.html#Storing-a-Token
 (setq auth-sources '(macos-keychain-internet))
 
+;; Magit performance improvements for large repos
+;; https://magit.vc/manual/magit/Performance.html
+(after! magit
+  (setq magit-revision-insert-related-refs nil)
+  (setq magit-copy-revision-abbreviated t)
+  (remove-hook 'magit-refs-sections-hook 'magit-insert-tags)
+  (remove-hook 'magit-refs-sections-hook 'magit-insert-remote-branches)
+  (remove-hook 'magit-status-sections-hook 'magit-insert-tags-header)
+  )
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
