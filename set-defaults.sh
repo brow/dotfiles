@@ -20,3 +20,6 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Cmd-ctrl drag anywhere in a window to move it
 defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# Xcode
+defaults write com.apple.dt.Xcode IDEIndexShowLog YES
