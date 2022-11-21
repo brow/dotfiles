@@ -23,3 +23,6 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 
 # Xcode
 defaults write com.apple.dt.Xcode IDEIndexShowLog YES
+
+# Chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
