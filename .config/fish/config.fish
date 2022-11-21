@@ -18,3 +18,6 @@ set fish_greeting
 
 # Suggested by homebrew
 set PATH /usr/local/opt/ruby/bin /usr/local/sbin /usr/local/bin /opt/homebrew/bin $PATH
+
+# Square
+set DEVELOPMENT_TEAM_ID B55P8QP425
