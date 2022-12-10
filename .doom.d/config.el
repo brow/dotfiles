@@ -29,19 +29,7 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function.
-;;   (add-hook
-;;    'ns-system-appearance-change-functions
-;;    (lambda (appearance) (
-;;       (pcase appearance
-;;         ('light (load-theme light-theme t)
-;;         ('dark (load-theme dark-theme t)))
-;;       )))))
-;;
-
-
+;; Auomatically load light or dark theme as system appearance changes
 (let ((dark-theme 'doom-tomorrow-night)
         ;; Also good:
         ;; 'doom-gruvbox
@@ -53,11 +41,8 @@
         ;; Also good:
         ;; 'doom-flatwhite
         ;; 'doom-tomorrow-day
-
-  ;; Automatically load theme for system appearance
   (add-hook 'ns-system-appearance-change-functions
             (lambda (appearance)
-              "Load theme, taking current system APPEARANCE into consideration."
               (mapc #'disable-theme custom-enabled-themes)
               (pcase appearance
                 ('light (load-theme light-theme))
