@@ -16,14 +16,24 @@
 ;; https://magit.vc/manual/ghub.html#Storing-a-Token
 (setq auth-sources '(macos-keychain-internet))
 
-;; Magit performance improvements for large repos
-;; https://magit.vc/manual/magit/Performance.html
+;; Magit
 (after! magit
+  ;; Performance improvements for large repos
+  ;; https://magit.vc/manual/magit/Performance.html
   (setq magit-revision-insert-related-refs nil)
   (setq magit-copy-revision-abbreviated t)
   (remove-hook 'magit-refs-sections-hook 'magit-insert-tags)
   (remove-hook 'magit-refs-sections-hook 'magit-insert-remote-branches)
   (remove-hook 'magit-status-sections-hook 'magit-insert-tags-header)
+
+  ;; Automatically display process buffer after a git error
+  ;; https://emacs.stackexchange.com/a/55946
+  (defun auto-display-magit-process-buffer (&rest args)
+    "Automatically display the process buffer when it is updated."
+    (let ((magit-display-buffer-noselect t))
+      (magit-process-buffer)))
+  (advice-add 'magit-process-set-mode-line-error-status :before
+    #'auto-display-magit-process-buffer)
   )
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
