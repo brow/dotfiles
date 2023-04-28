@@ -21,3 +21,4 @@ set PATH /usr/local/opt/ruby/bin /usr/local/sbin /usr/local/bin /opt/homebrew/bi
 
 # Square
 set DEVELOPMENT_TEAM_ID B55P8QP425
+rvm default
