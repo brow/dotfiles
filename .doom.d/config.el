@@ -18,13 +18,26 @@
 
 ;; Magit
 (after! magit
+  (setq magit-copy-revision-abbreviated t)
+
   ;; Performance improvements for large repos
   ;; https://magit.vc/manual/magit/Performance.html
   (setq magit-revision-insert-related-refs nil)
-  (setq magit-copy-revision-abbreviated t)
   (remove-hook 'magit-refs-sections-hook 'magit-insert-tags)
   (remove-hook 'magit-refs-sections-hook 'magit-insert-remote-branches)
   (remove-hook 'magit-status-sections-hook 'magit-insert-tags-header)
+  ;; Some additional ones from @emish
+  ;; https://square.slack.com/archives/C02R18K7D/p1674684566557969?thread_ts=1669905070.619959&cid=C02R18K7D
+  ;;
+  ;; Don't show graph in log view, speeds up significantly.
+  (setq magit-log-arguments
+      '("-n256" "--decorate"))
+  ;; Don't calculate the diff when I want to commit. I've usually reviewed my stage before initiating the commit.
+  (remove-hook 'server-switch-hook 'magit-commit-diff)
+  ;; Don't use other VC systems, we use Git and Magit. Helps performance.
+  (setq vc-handled-backends nil)
+  ;; Don't refresh the status buffer if it is not the current buffer (improves perf)
+  (setq magit-refresh-status-buffer nil)
 
   ;; Automatically display process buffer after a git error
   ;; https://emacs.stackexchange.com/a/55946
