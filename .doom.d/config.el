@@ -38,6 +38,11 @@
   (setq vc-handled-backends nil)
   ;; Don't refresh the status buffer if it is not the current buffer (improves perf)
   (setq magit-refresh-status-buffer nil)
+  ;; Make Squinter work better with magit
+  (setq magit-git-environment
+        (append magit-git-environment
+                (list "USE_SQUINTER_PREPUSH=1"
+                      "PRE_COMMIT_HOOK_AUTO_RESOLVE_ERRORS_AND_ABORT=1")))
 
   ;; Automatically display process buffer after a git error
   ;; https://emacs.stackexchange.com/a/55946
