@@ -27,3 +27,5 @@ function be --wraps bundle
   bundle check &> /dev/null || bundle install
   bundle exec $argv
 end
+
+set -x USE_SQUINTER_PREPUSH 1
