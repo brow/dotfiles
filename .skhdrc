@@ -1,12 +1,6 @@
 # Focus
-cmd + ctrl - up :    brew services restart yabai
+cmd + ctrl - up :    yabai --restart-service
 cmd + ctrl - down :    yabai -m window --focus recent
-cmd + ctrl - left :    yabai -m window --focus prev || \
-                       yabai -m display --focus west
-                       # yabai -m window --focus last
-cmd + ctrl - right :   yabai -m window --focus next || \
-                       yabai -m display --focus east
-                       # yabai -m window --focus first
 
 # Swap
 ctrl + alt + shift - j :    yabai -m window --swap recent
