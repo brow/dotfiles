@@ -36,3 +36,5 @@ yabai -m rule --add label="System Preferences" app="^System Preferences$" title=
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add title="Picture in Picture" manage=off
+yabai -m rule --add app="Simulator" manage=off
+yabai -m rule --add app="licecap" manage=off
