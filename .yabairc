@@ -39,3 +39,4 @@ yabai -m rule --add title="Picture in Picture" manage=off
 yabai -m rule --add app="Simulator" manage=off
 yabai -m rule --add app="licecap" manage=off
 yabai -m rule --add app="Emacs" title="Emacs Everywhere" manage=off
+yabai -m rule --add app="Google Password Manager" manage=off
