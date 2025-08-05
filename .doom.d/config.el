@@ -129,6 +129,16 @@
       :map org-mode-map
       "l f" 'org-mac-safari-insert-frontmost-url)
 
+;; Configure vterm to use emacs state in evil-mode
+(after! vterm
+  ;; Set vterm to start in emacs state (not insert state)
+  (evil-set-initial-state 'vterm-mode 'emacs)
+  
+  ;; Ensure we switch to emacs state when entering vterm
+  (add-hook 'vterm-mode-hook
+            (lambda ()
+              (evil-emacs-state))))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one

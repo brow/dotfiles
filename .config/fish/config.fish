@@ -3,8 +3,8 @@ function fish_prompt
     echo "> "
 end
 
-# no vi mode
-fish_default_key_bindings
+# Enable vi mode in fish shell
+fish_vi_key_bindings
 
 function fish_mode_prompt
 end
