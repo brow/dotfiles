@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "@block/mcp_jira@latest"],
+      "env": {
+        "JIRA_EMAIL": "tomb@squareup.com"
+      }
+    },
+    "slack": {
+      "command": "uvx",
+      "args": ["mcp_slack"],
+      "env": {
+        "SLACK_DEFAULT_WORKSPACE_ID": "T05HJ0CKWG5"
+      }
+    },
+    "gcal": {
+      "command": "uvx",
+      "args": ["mcp_gcal"]
+    },
+    "snowflake": {
+      "command": "uvx",
+      "args": ["mcp_snowflake"]
+    },
+    "Linear": {
+      "command": "uvx",
+      "args": ["mcp_linear@latest"],
+      "env": {}
+    }
+  }
+}

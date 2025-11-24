@@ -1,0 +1,100 @@
+[info] runServer socketPath=/Users/tomb/.cursor/projects/Users-tomb-Documents-interviewing/worker.sock
+[error] npx not found in PATH ERROR: TypeError: Cannot read properties of undefined (reading 'split')
+    at runDownPath (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:212713:39)
+    at findActualExecutable (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:212743:23)
+    at TypescriptLspProviderFactory.<anonymous> (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:141605:66)
+    at Generator.next (<anonymous>)
+    at /Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:141582:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__.../local-worker/dist/index.js.typescript_lsp_provider_awaiter (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:141578:12)
+    at TypescriptLspProviderFactory.create (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:141600:16)
+    at runServer (/Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:142195:81)
+    at /Users/tomb/.local/share/cursor-agent/versions/2025.10.21-224d294/index.js:251919:20
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Syncing merkle subtree path=. localHash=347bd1fcca3f78fc233b95c33057bc08acda6726a29bb7d66efae0491dd47844 remoteHash=
+[info] Syncing merkle subtree path=Mobile Take-Home localHash=ec00071a8e871a0025c39196df0492852d8df01e7e70ade1656d3792c49ad7b5 remoteHash=undefined
+[info] Syncing merkle subtree path=Leadership localHash=7d9a10c49eb3c0f0049b241b372b87c60da5335ccde162cfd328ab1515e98b8a remoteHash=undefined
+[info] Syncing merkle subtree path=Engineering Interviewing Rubric.md localHash=fd6b52b568813a203c58540c67247c69eb787c355d7c200d3bb4f578bbb00062 remoteHash=undefined
+[info] Applying change type=add relativePath=Engineering Interviewing Rubric.md
+[info] Syncing merkle subtree path=.gitignore localHash=cdd8189175859b156452071097bfda6acd801a20c544598fe8e8c5f78ae14087 remoteHash=undefined
+[info] Applying change type=add relativePath=.gitignore
+[info] Syncing merkle subtree path=Mobile Take-Home/Take-Home Evaluation Instructions.md localHash=714e9106731f26a0915cefb49abeea05dc0db384860abfa31cf42e663330f959 remoteHash=undefined
+[info] Applying change type=add relativePath=Mobile Take-Home/Take-Home Evaluation Instructions.md
+[info] Syncing merkle subtree path=Mobile Take-Home/Finished Scorecards localHash=3d5b90d0b6f406b5785842163ff9defe27602ff9876e424d7b99f8e276493456 remoteHash=undefined
+[info] Syncing merkle subtree path=Mobile Take-Home/Take-Home Project Site.md localHash=0238588922fe2def9ce66d38e3bd817be74f9c5079de75da928ec946928b1dfe remoteHash=undefined
+[info] Applying change type=add relativePath=Mobile Take-Home/Take-Home Project Site.md
+[info] Syncing merkle subtree path=Mobile Take-Home/Take-Home Evaluation Template.md localHash=193c52949932a57974f418664c114261c2cdec61585d01cf5aadea5d5d090aa8 remoteHash=undefined
+[info] Applying change type=add relativePath=Mobile Take-Home/Take-Home Evaluation Template.md
+[info] Syncing merkle subtree path=Leadership/Candidates localHash=081625ada13dcc95d22220c9b4d363446a5cd7d88d171983d641aac6d98eb36c remoteHash=undefined
+[info] Syncing merkle subtree path=Leadership/Leadership Interview.md localHash=f7edd94f1d096de4dc4ba9306c9d98dc3da8ad1be60639de2e70b78d1ccf5ffa remoteHash=undefined
+[info] Applying change type=add relativePath=Leadership/Leadership Interview.md
+[info] Syncing merkle subtree path=Leadership/Finished scorecards localHash=f77a8e0ae4ffbfedd9e197bb9fbe708987c81332b5a478f0c0ffded781dfe781 remoteHash=undefined
+[info] Syncing merkle subtree path=Mobile Take-Home/Finished Scorecards/candidate-1-scorecard.md localHash=73d859897481b16fe4973b87118da04b03a9cb17bc8ba493a9b9e961560efbba remoteHash=undefined
+[info] Applying change type=add relativePath=Mobile Take-Home/Finished Scorecards/candidate-1-scorecard.md
+[info] Syncing merkle subtree path=Mobile Take-Home/Finished Scorecards/candidate-2-scorecard.md localHash=1daf02946120bb79cda40efe7cc1c33b62f816fc054fda44aafb4c8a5a09ecb4 remoteHash=undefined
+[info] Applying change type=add relativePath=Mobile Take-Home/Finished Scorecards/candidate-2-scorecard.md
+[info] Syncing merkle subtree path=Leadership/Candidates/Victor Lai localHash=b890f71d0ed3b728c270110637cdd2abf28bb22fc0ed2a1a2d2eba918d5ca84e remoteHash=undefined
+[info] Syncing merkle subtree path=Leadership/Finished scorecards/candidate-2-scorecard.md localHash=85ca96f73a4e7f78854417feb390e7837ba62ef1f40f251cdd7baa33df750679 remoteHash=undefined
+[info] Syncing merkle subtree path=Leadership/Finished scorecards/candidate-1-scorecard.md localHash=5b8eb42035a044666cc0b0f13ba06674e389e44bd83076145f69bb2f0f8652bf remoteHash=undefined
+[info] Syncing merkle subtree path=Leadership/Candidates/Victor Lai/scorecard.md localHash=7497b7ba5bf4d9b6e50277916683c998ce15593dad0479312cdcb953e59b8861 remoteHash=undefined
+[info] Updating file updateType=1 ancestorSpline=[object Object] partialPath=[object Object]
+[info] Updating files requestId=7708bd17-fcf2-4965-a0af-6d2661922bc3 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=c19a1420-8601-4b3d-b768-ed4d5fa81532 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object] partialPath=[object Object]
+[info] Updating files requestId=a44a37e6-e958-4161-be7a-bef53ed0fc60 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=15855d2c-8d53-42b1-963f-20e9abd248b5 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=6d9e1cc6-0b86-4ea7-bcb2-caf57ff4bb5a changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=e0ac5bca-84f7-43b7-b813-785ca91d7168 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=416c5520-cde9-43c5-b962-ef31520a1138 changes=1
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=1d99ed75-7646-4b3b-8274-3c4407c9bf80 changes=1
+[info] Updated files requestId=7708bd17-fcf2-4965-a0af-6d2661922bc3 response=[object Object]
+[info] Applying change type=add relativePath=Leadership/Finished scorecards/candidate-2-scorecard.md
+[info] Applying change type=add relativePath=Leadership/Finished scorecards/candidate-1-scorecard.md
+[info] Applying change type=add relativePath=Leadership/Candidates/Victor Lai/scorecard.md
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object],[object Object] partialPath=[object Object]
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object],[object Object] partialPath=[object Object]
+[info] Updating file updateType=1 ancestorSpline=[object Object],[object Object],[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=474ee88d-55ae-4b50-ab90-a8d7e08a977b changes=3
+[info] Updated files requestId=416c5520-cde9-43c5-b962-ef31520a1138 response=[object Object]
+[info] Updated files requestId=6d9e1cc6-0b86-4ea7-bcb2-caf57ff4bb5a response=[object Object]
+[info] Updated files requestId=a44a37e6-e958-4161-be7a-bef53ed0fc60 response=[object Object]
+[info] Updated files requestId=e0ac5bca-84f7-43b7-b813-785ca91d7168 response=[object Object]
+[info] Updated files requestId=c19a1420-8601-4b3d-b768-ed4d5fa81532 response=[object Object]
+[info] Updated files requestId=15855d2c-8d53-42b1-963f-20e9abd248b5 response=[object Object]
+[info] Updated files requestId=1d99ed75-7646-4b3b-8274-3c4407c9bf80 response=[object Object]
+[info] Updated files requestId=474ee88d-55ae-4b50-ab90-a8d7e08a977b response=[object Object]
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Syncing merkle subtree path=. localHash=023a1c4cf1c5dc913501e106d20e0fdeea5f6d0993e0a16600550ff298c0443d remoteHash=
+[info] Syncing merkle subtree path=Leadership localHash=3e77134d2300813ec00ef2d77c269cb7e53313e8c3b6db44f347616327e04beb remoteHash=7d9a10c49eb3c0f0049b241b372b87c60da5335ccde162cfd328ab1515e98b8a
+[info] Syncing merkle subtree path=Engineering Interviewing Rubric.md localHash=fd6b52b568813a203c58540c67247c69eb787c355d7c200d3bb4f578bbb00062 remoteHash=fd6b52b568813a203c58540c67247c69eb787c355d7c200d3bb4f578bbb00062
+[info] Syncing merkle subtree path=Mobile Take-Home localHash=ec00071a8e871a0025c39196df0492852d8df01e7e70ade1656d3792c49ad7b5 remoteHash=ec00071a8e871a0025c39196df0492852d8df01e7e70ade1656d3792c49ad7b5
+[info] Syncing merkle subtree path=.gitignore localHash=cdd8189175859b156452071097bfda6acd801a20c544598fe8e8c5f78ae14087 remoteHash=cdd8189175859b156452071097bfda6acd801a20c544598fe8e8c5f78ae14087
+[info] Updating file updateType=2 ancestorSpline=[object Object],[object Object] partialPath=[object Object]
+[info] Updating files requestId=ad4ec3a3-dd67-492b-a083-eaf62cf22511 changes=1
+[info] Syncing merkle subtree path=Leadership/Leadership Interview.md localHash=f7edd94f1d096de4dc4ba9306c9d98dc3da8ad1be60639de2e70b78d1ccf5ffa remoteHash=f7edd94f1d096de4dc4ba9306c9d98dc3da8ad1be60639de2e70b78d1ccf5ffa
+[info] Syncing merkle subtree path=Leadership/Finished scorecards localHash=f77a8e0ae4ffbfedd9e197bb9fbe708987c81332b5a478f0c0ffded781dfe781 remoteHash=f77a8e0ae4ffbfedd9e197bb9fbe708987c81332b5a478f0c0ffded781dfe781
+[info] Updated files requestId=ad4ec3a3-dd67-492b-a083-eaf62cf22511 response=[object Object]
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
+[info] Indexing finished
+[info] Indexing now
+[info] Getting tree structure for workspacePath=/Users/tomb/Documents/interviewing
