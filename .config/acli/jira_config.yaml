@@ -1,0 +1,9 @@
+version: 1
+current_profile: 31e7a210-9ba8-468d-a1d1-a806c34e5961:6357261376b91b62562d5d00
+profiles:
+    - site: block.atlassian.net
+      cloud_id: 31e7a210-9ba8-468d-a1d1-a806c34e5961
+      account_id: 6357261376b91b62562d5d00
+      display_name: Tom Brow
+      email: tomb@squareup.com
+      auth_type: oauth
