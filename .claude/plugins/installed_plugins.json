@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "plugins": {
+    "rp1-base@block-rp1": {
+      "version": "2.0.1",
+      "installedAt": "2025-11-14T00:51:16.930Z",
+      "lastUpdated": "2025-11-14T00:51:16.930Z",
+      "installPath": "/Users/tomb/.claude/plugins/marketplaces/block-rp1/base/",
+      "gitCommitSha": "c504f414f3fc3d3cfcf76d8514b6996381ab1712",
+      "isLocal": true
+    },
+    "rp1-dev@block-rp1": {
+      "version": "2.5.0",
+      "installedAt": "2025-11-14T00:51:16.930Z",
+      "lastUpdated": "2025-11-14T00:51:16.930Z",
+      "installPath": "/Users/tomb/.claude/plugins/marketplaces/block-rp1/dev/",
+      "gitCommitSha": "c504f414f3fc3d3cfcf76d8514b6996381ab1712",
+      "isLocal": true
+    }
+  }
+}
