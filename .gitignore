@@ -14,3 +14,20 @@ node_modules
 #
 # I use this to _not_ ignore the Pods dir when grepping ios-register.
 .rgignore
+
+# Places that store arbitrary amounts of generated stuff
+.config/goose
+.config/raycast/extensions
+.config/databricks-sdk-py
+.cursor/extensions
+
+# Claude Code - track config, ignore runtime data
+.claude/*
+!.claude/settings.json
+!.claude/CLAUDE.md
+!.claude/agents/
+!.claude/commands/
+
+# Zed - binary database files
+.config/zed/prompts/
+.config/zed/conversations/
