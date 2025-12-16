@@ -3,7 +3,6 @@ allowed-tools:
   - Bash(gh pr view:*)
   - Bash(gh pr diff:*)
   - Bash(gh pr checks:*)
-  - Bash(gh pr review:*)
   - Bash(gh api:*)
 ---
 
@@ -38,11 +37,8 @@ Review the GitHub pull request at the provided URL.
    - Focus your own analysis on issues that haven't been identified yet
    - **However**: Include red/yellow flags raised by others in your summary (attribute them, e.g., "As @reviewer noted..."), and factor them into the approval decision
 
-7. If there are ANY red or yellow flags (whether found by you OR raised by other reviewers), report them to the user with specific line references and DO NOT approve
-8. If there are ONLY yellow flags, report them to the user AND approve using `gh pr review --approve "$ARGUMENTS"`
-9. If there are NO issues at all, approve using `gh pr review --approve "$ARGUMENTS"`
-
-**IMPORTANT**: ALWAYS run `gh pr review --approve` when appropriate, regardless of the PR's state (open, merged, or closed). Do NOT skip the approve command based on assumptions about whether it will work.
+7. If there are ANY red or yellow flags (whether found by you OR raised by other reviewers), report them to the user with specific line references.
+8. If there are NO red flags, approve using `gh pr review --approve` with NO OTHER NAMED PARAMETERS. DO NOT include a `--body` parameter or attach commentary to the approval in any other way. DO NOT skip this step due merely to the PR being merged or closed already; approving merged or closed PRs is valid.
 
 ## HYPERLINK REQUIREMENTS
 
@@ -78,8 +74,7 @@ Use markdown hyperlinks: `[line 202 of mint_generator.rb](https://github.com/...
 
 ## CRITICAL RESTRICTIONS
 
-- DO NOT comment on the PR under any circumstances
-- DO NOT leave review comments, inline comments, or any written feedback on GitHub
-- DO NOT perform any action other than viewing or approving
-- The ONLY write action allowed is `gh pr review --approve`
+- DO NOT comment on the PR under any circumstances or include any comment with a review
+- DO NOT perform any action other than viewing and approving
+- The ONLY write action allowed is `gh pr review --approve` with no other named parameters
 - Report any concerns directly to the user in the terminal, NOT on the PR
