@@ -162,7 +162,6 @@
       "WebFetch",
       "WebSearch",
       "Bash(open:*)",
-
       "Bash(git commit:*)"
     ]
   },
