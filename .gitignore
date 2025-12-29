@@ -27,10 +27,6 @@ node_modules
 !.claude/CLAUDE.md
 !.claude/agents/
 !.claude/commands/
-!.claude/plugins/
-.claude/plugins/*
-!.claude/plugins/installed_plugins.json
-!.claude/plugins/known_marketplaces.json
 
 # Zed - binary database files
 .config/zed/prompts/
