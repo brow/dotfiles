@@ -2,7 +2,8 @@
   "env": {
     "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "true",
     "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6144",
-    "MAX_THINKING_TOKENS": "1024"
+    "MAX_THINKING_TOKENS": "1024",
+    "ENABLE_TOOL_SEARCH": "true"
   },
   "permissions": {
     "allow": [
@@ -74,12 +75,6 @@
       "Bash(claude mcp inspect:*)",
       "Bash(claude mcp logs:*)",
       "Bash(claude mcp status:*)",
-      "mcp__slack__get_channel_messages",
-      "mcp__slack__search_messages",
-      "mcp__slack__get_user_info",
-      "mcp__slack__list_channels",
-      "mcp__slack__get_channel_info",
-      "mcp__slack__misc_read",
       "Bash(bundle install:*)",
       "Bash(bundle exec pod install:*)",
       "Bash(ls:*)",
@@ -170,10 +165,6 @@
 
       "Bash(git commit:*)"
     ]
-  },
-  "enabledPlugins": {
-    "rp1-base@block-rp1": true,
-    "rp1-dev@block-rp1": true
   },
   "alwaysThinkingEnabled": false,
   "model": "opus"

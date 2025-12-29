@@ -57,3 +57,6 @@ theme = light:GitHub Light Default,dark:GitHub Dark Default
 font-thicken = true
 # Thickening strength (0-255, higher = heavier)
 font-thicken-strength = 160
+
+# Consume cmd-enter without passing through
+keybind = cmd+enter=ignore
