@@ -23,3 +23,6 @@ bindkey -M vicmd v edit-command-line
 
 # Adding libexec/bin to path
 export PATH=$PATH:/opt/homebrew/opt/python@3/libexec/bin
+
+# Add local bin to path (claude is installed here)
+export PATH="$HOME/.local/bin:$PATH"
